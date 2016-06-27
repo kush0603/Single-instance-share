@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.amirulislam.nabilsproject.ShowModifyWalletDetailsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your account balance is"
+        android:id="@+id/textView1" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transactions"
+        android:id="@+id/trans"
+
+       android:layout_alignParentRight="true"
+
+        android:layout_toEndOf="@+id/walletbalancetextbox"
+        android:layout_above="@+id/walletbalancetextbox"
+        android:layout_toRightOf="@+id/walletbalancetextbox" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/accountBalanceInModifyScreen" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Wallet Balance"
+        android:id="@+id/walletbalancetextbox"
+        android:layout_below="@+id/accountBalanceInModifyScreen"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/modifywalletbutton"
+        android:layout_alignEnd="@+id/modifywalletbutton" />
+
+
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Area"
+        android:id="@+id/areatextbox"
+        android:layout_below="@+id/walletbalancetextbox"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/modifywalletbutton"
+        android:layout_alignEnd="@+id/modifywalletbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+        android:id="@+id/distancebutton"
+        android:layout_below="@+id/walletbalancetextbox"
+        android:layout_toRightOf="@+id/areatextbox"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:hint="Daily Limit"
+        android:id="@+id/dailylimittextbox"
+        android:layout_below="@+id/distancebutton"
+        android:layout_centerVertical="true"
+        android:layout_alignRight="@+id/modifywalletbutton"
+        android:layout_alignEnd="@+id/modifywalletbutton" />
+
+    <ExpandableListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/left_drawer2"
+        android:layout_below="@+id/dailylimittextbox"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify Wallet"
+        android:id="@+id/modifywalletbutton"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/left_drawer2"/>
+
+
+
+</RelativeLayout>
